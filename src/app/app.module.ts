@@ -3,7 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import {FormsModule} from "@angular/forms";
-import {HttpModule} from "@angular/http"
+import {HttpModule} from "@angular/http";
+import {AlertModule} from "ngx-bootstrap/alert";
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import {HttpModule} from "@angular/http"
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AlertModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
